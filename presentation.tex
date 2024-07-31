@@ -502,7 +502,7 @@ void perform_query(std::string bbox, bool verbose) {
 \end{frame}
 
 
-\begin{frame}{Tree modeling: Mercator's projection}
+\begin{frame}{Tree Modeling: Mercator's projection}
 	\begin{figure}[H]
 	  \centering
 	  \includegraphics[width=\textwidth]{images/mercator.jpg}
@@ -512,7 +512,7 @@ void perform_query(std::string bbox, bool verbose) {
 
   \end{frame}
 
-  \begin{frame}{Tree modeling: Mercator's projection}
+  \begin{frame}{Tree Modeling: Mercator's projection}
 	\Large
 	A(latitude, longitude) = A($\phi$, $\lambda$),\\
 	\begin{equation}
@@ -529,7 +529,7 @@ void perform_query(std::string bbox, bool verbose) {
   \end{frame}
 
 
-  \begin{frame}{Tree modeling: Mercator's projection}
+  \begin{frame}{Tree Modeling: Mercator's projection}
 	\Large
 	\begin{figure}[H]
 	  \centering
@@ -550,7 +550,7 @@ void perform_query(std::string bbox, bool verbose) {
   \textit{WGS84toCartesian.hpp} $\Longrightarrow$ \textbf{GPS} to \textbf{Cartesian}
   \end{frame}
 
-  \begin{frame}{Tree modeling: foliage and trunk placement}
+  \begin{frame}{Tree Modeling: foliage and trunk placement}
 	\begin{figure}
 		\centering
 		\includegraphics[width=0.5\textwidth]{images/trunk_cut.png}
@@ -559,7 +559,7 @@ void perform_query(std::string bbox, bool verbose) {
 	\end{figure}
 \end{frame}
 
-\begin{frame}{Tree modeling: tree's placement}
+\begin{frame}{Tree Modeling: tree's placement}
   \begin{figure}[H]
 	\centering
 	\begin{minipage}{0.49\textwidth}
@@ -577,7 +577,7 @@ void perform_query(std::string bbox, bool verbose) {
   \end{figure}
 \end{frame}
 
-\begin{frame}{Tree modeling: tree's placement}
+\begin{frame}{Tree Modeling: tree's placement}
 	\begin{figure}[H]
 		  \centering
 		  \includegraphics[width=\textwidth]{images/republic-side-view.png}
@@ -586,7 +586,7 @@ void perform_query(std::string bbox, bool verbose) {
 	\end{figure}
 \end{frame}
 
-\begin{frame}{Tree modeling: tree's altitude}
+\begin{frame}{Tree Modeling: tree's altitude}
 	\begin{figure}
 		\centering
 		\includegraphics[width=\textwidth]{images/raycasting.png}
@@ -594,6 +594,43 @@ void perform_query(std::string bbox, bool verbose) {
 		\label{fig:figure1}
 	\end{figure}
 \end{frame}
+
+\begin{frame}{Tree Modeling: mesh merging}
+	\begin{figure}[h]
+		\begin{minipage}{0.49\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{images/autorefine_before.png}
+			\caption{Autorefine before}
+			\label{fig:figure1}
+		\end{minipage}\hfill
+		\begin{minipage}{0.49\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{images/autorefine_after.png}
+			\caption{Autorefine after}
+			\label{fig:figure2}
+		\end{minipage}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Tree Modeling: thread parallelization}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.8\textwidth]{images/thread_parallelization.PNG}
+		\caption{Parallelization of the tree generation process}
+		\label{fig:figure1}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Tree Modeling: thread parallelization autorefine}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.5\textwidth]{images/stras_cutted.png}
+		\caption{Parallelization of the mesh refinement process}
+		\label{fig:figure1}
+	\end{figure}
+\end{frame}
+
+
 
 
 
