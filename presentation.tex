@@ -596,6 +596,15 @@ void perform_query(std::string bbox, bool verbose) {
 \end{frame}
 
 \begin{frame}{Tree Modeling: mesh merging}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.45\textwidth]{images/plants_wall.jpg}
+		\caption{A plant going through a wall}
+		\label{fig:figure1}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Tree Modeling: mesh merging}
 	\begin{figure}[h]
 		\begin{minipage}{0.49\textwidth}
 			\centering
@@ -676,33 +685,138 @@ void perform_query(std::string bbox, bool verbose) {
 \end{frame}
 
 
+\begin{frame}{Results: Performance}
+	\Large
+	\begin{figure}[H]
+	  \centering
+	  \includegraphics[width=0.7\textwidth]{images/ovt-bbox1.png}
+	  \captionsetup{font={scriptsize}}
+	  \caption{Bounding Box 1: 153.7 m², 12 trees}
+  \end{figure}
+  \end{frame}
 
+  \begin{frame}{Results: Performance}
+	\Large
+	\begin{figure}[H]
+	  \centering
+	  \includegraphics[width=0.7\textwidth]{images/ovt-bbox2.png}
+	  \captionsetup{font={scriptsize}}
+	  \caption{Bounding Box 2: 384.0 m², 71 trees}
+  \end{figure}
+  \end{frame}
 
+  \begin{frame}{Results: Performance}
+	\Large
+	\begin{figure}[H]
+	  \centering
+	  \includegraphics[width=0.7\textwidth]{images/ovt-bbox3.png}
+	  \captionsetup{font={scriptsize}}
+	  \caption{Bounding Box 3: 626.1 m², 254 trees}
+  \end{figure}
+  \end{frame}
 
+  \begin{frame}{Results: Performance}
+	\Large
+	\begin{figure}[H]
+	  \centering
+	  \includegraphics[width=0.7\textwidth]{images/ovt-bbox4.png}
+	  \captionsetup{font={scriptsize}}
+	  \caption{Bounding Box 4: 808.4 m², 513 trees}
+  \end{figure}
+  \end{frame}
 
+%%%%% finish perf
 
+\begin{frame}{Prospects}
+	\begin{itemize}
+		\item Fixing the tree's altitude
+	\end{itemize}
 
+	\begin{figure}
+		\centering
+		\includegraphics[width=\textwidth]{images/grenoble_fail.png}
+		\caption{Grenoble elevation fail}
+		\label{fig:figure1}
+	\end{figure}
+\end{frame}
 
+\begin{frame}{Prospects}
+	\begin{itemize}
+		\item Parallelize the computation of the `autorefine` method
+	\end{itemize}
 
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.5\textwidth]{images/stras_cutted.png}
+		\caption{.Terrain mesh splitted into smaller parts, the red lines represent the boundaries of the parts and should not be parallelized}
+		\label{fig:figure1}
+	\end{figure}
+\end{frame}
 
+\begin{frame}{Prospects}
+	\begin{itemize}
+		\item Improve the handling of missing tree data
+	\end{itemize}
 
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.7\textwidth]{images/ovt-node-missing-data.png}
+		\caption{An Overpass Turbo Node with missing metadata}
+		\label{fig:figure1}
+	\end{figure}
+\end{frame}
 
+\begin{frame}{Prospects}
+	\begin{itemize}
+		\item Shading calculation
+	\end{itemize}
 
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.6\textwidth]{images/cathedrale_shading.png}
+		\caption{The shadow cast by the Cathedral of Strasbourg }
+		\label{fig:figure1}
+	\end{figure}
+\end{frame}
 
 
 \begin{frame}{Conclusion}
-  \Large
-  \textbf{ExaMA WP1 - Vegetation}:
-  \begin{itemize}
-    \item Foundation for future urban energy simulations
-    integrating vegetation into the models
-  \end{itemize}
+    \begin{itemize}
+        \item \textbf{Project Goal:} Enhanced urban modeling by integrating 3D tree models into urban environments.
+        \item \textbf{Key Achievements:}
+        \begin{itemize}
+            \item Extracted tree data from OpenStreetMap.
+            \item Generated 3D tree models using CGAL and Gmsh.
+            \item Integrated models into existing terrain meshes.
+            \item Utilized different Levels of Detail (LOD) for flexible modeling.
+        \end{itemize}
+        \item \textbf{Technical Highlights:}
+        \begin{itemize}
+            \item Robust data acquisition and model generation techniques.
+            \item Successful scalability and performance benchmarks.
+            \item Addressed missing data with default tree height values.
+        \end{itemize}
+        \item \textbf{Future Directions:}
+        \begin{itemize}
+            \item Incorporate tree elevations, parallelization, and advanced shading for improved modeling.
+        \end{itemize}
+    \end{itemize}
 \end{frame}
 
+
 \begin{frame}{The end}
-  \Large
-  \centering
-  \textbf{Thank you for your attention!}
+	\Large
+	\centering
+	\textbf{Thank you for your attention!} \\
+	\vspace{1em}
+	\includegraphics[height=1cm]{images/party-emoji.png}
+	\vspace{1em}
+	\textbf{Any questions?} \\
+	\vspace{2em}
+	\small
+	\textit{Contact Information:} \\
+	pierre.antoine.senger@gmail.com \\
+	github.com/PA-Senger
 \end{frame}
 
 \nocite{*}
