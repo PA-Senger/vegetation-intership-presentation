@@ -1,0 +1,13 @@
+*.bbl
+*.nav
+*.pdf
+*.snm
+*.gz
+*.gz(busy)
+*.vrb
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.synctex(busy)
