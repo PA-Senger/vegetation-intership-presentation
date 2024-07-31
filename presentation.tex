@@ -245,7 +245,7 @@ void perform_query(std::string bbox, bool verbose) {
 	\end{figure}
 \end{frame}
 
-\begin{frame}{Tree lod 0 models}
+\begin{frame}{Tree Modeling: lod 0}
 	\begin{figure}[h]
 		\centering
 		\begin{minipage}{0.49\textwidth}
@@ -264,7 +264,7 @@ void perform_query(std::string bbox, bool verbose) {
 	\end{figure}
 \end{frame}
 
-\begin{frame}{Tree lod 0 models}
+\begin{frame}{Tree Modeling: lod 0}
 	\begin{figure}[h]
 		\centering
 		\begin{minipage}{0.49\textwidth}
@@ -283,7 +283,7 @@ void perform_query(std::string bbox, bool verbose) {
 	\end{figure}
 \end{frame}
 
-\begin{frame}{Tree lod 1,2 and 3 models}
+\begin{frame}{Tree Modeling: lod 1,2 and 3}
 	\begin{figure}
 		\centering
 		\includegraphics[width=\textwidth]{images/ginkgo-sketchup.png}
@@ -293,6 +293,7 @@ void perform_query(std::string bbox, bool verbose) {
 \end{frame}
 
 \begin{frame}{Tree preprocessing}
+	Remove trunk/branches, normalize and center
 	\begin{figure}[h]
 		\centering
 		\begin{minipage}{0.3\textwidth}
@@ -315,6 +316,287 @@ void perform_query(std::string bbox, bool verbose) {
 		\end{minipage}
 	\end{figure}
 \end{frame}
+
+\begin{frame}{Sofware and libraries: CGAL}
+	\Large
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\textwidth]{images/logo-cgal.png}
+	\end{figure}
+	\begin{center}
+	  \Large Open source software library for \textbf{computational geometry algorithms}
+	\end{center}
+  \end{frame}
+
+  \begin{frame}{Tree modeling: Alpha Wrapping}
+	\begin{figure}[H]
+	  \centering
+		  \centering
+		  \includegraphics[width=\textwidth]{images/alpha-wrapping-bike.jpg}
+		  \captionsetup{font={scriptsize}}
+		  \caption{Different LOD of the Alpha Wrapping of a bike\cite{cgal_alpha_wrapper}}
+  \end{figure}
+  \end{frame}
+
+
+  \begin{frame}{Tree modeling: Alpha Wrapping}
+	\Large
+	\textcolor{red}{\textbf{Input:}}
+	  \begin{itemize}
+	  \item  3D model with possible defects
+	  \end{itemize}
+	  \textcolor{red}{\textbf{Output:} }
+	  \begin{itemize}
+		\item Water-tight mesh
+		\item No self-intersections
+		\item Strictly enclosing the input
+		\item Well shaped triangles
+	  \end{itemize}
+  \end{frame}
+
+
+  \begin{frame}{Tree modeling: Alpha Wrapping}
+	\Large
+	\begin{figure}[H]
+	  \centering
+	  \includegraphics[width=\textwidth]{images/alpha-wrapping-ball.jpg}
+	  \captionsetup{font={scriptsize}}
+	  \caption{Alpha Wrapping in 2D with Offset and different Alpha parameters}
+  \end{figure}
+  \end{frame}
+
+
+  \begin{frame}{Tree modeling: Alpha Wrapping}
+	\Large
+	\href{https://youtu.be/xIIDolWCrgU}{video link}
+	\begin{center}
+	  \movie[width=1\textwidth,height=0.8\textheight,poster,showcontrols]{}
+	  {images/alpha-wrapping.mp4}
+	\end{center}
+  \end{frame}
+
+\begin{frame}{Tree Modeling: lod 1,2 and 3}
+	\begin{figure}[h]
+		\centering
+		\begin{minipage}{0.3\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{images/tree-cone_lod1.png}
+			\caption{A wrapped conifer tree for LOD 1}
+			\label{fig:figure1}
+		\end{minipage}\hfill
+		\begin{minipage}{0.3\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{images/tree-cone_lod2.png}
+			\caption{A wrapped conifer tree for LOD 2}
+			\label{fig:figure2}
+		\end{minipage}
+		\begin{minipage}{0.33\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{images/tree-cone_lod3.png}
+			\caption{A wrapped conifer tree for LOD 3}
+			\label{fig:figure2}
+		\end{minipage}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Tree Modeling: lod 1,2 and 3}
+	\begin{figure}[h]
+		\centering
+		\begin{minipage}{0.3\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{images/tree-oval_lod1.png}
+			\caption{A wrapped Ginkgo tree for LOD 1}
+			\label{fig:figure1}
+		\end{minipage}\hfill
+		\begin{minipage}{0.3\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{images/tree-oval_lod2.png}
+			\caption{A wrapped Ginkgo tree for LOD 2}
+			\label{fig:figure2}
+		\end{minipage}
+		\begin{minipage}{0.33\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{images/tree-oval_lod3.png}
+			\caption{A wrapped Ginkgo tree for LOD 3}
+			\label{fig:figure2}
+		\end{minipage}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Tree Modeling: lod 1,2 and 3}
+	\begin{figure}[h]
+		\centering
+		\begin{minipage}{0.3\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{images/tree-round_lod1.png}
+			\caption{A wrapped Quercus tree for LOD 1}
+			\label{fig:figure1}
+		\end{minipage}\hfill
+		\begin{minipage}{0.3\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{images/tree-round_lod2.png}
+			\caption{A wrapped Quercus tree for LOD 2}
+			\label{fig:figure2}
+		\end{minipage}
+		\begin{minipage}{0.33\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{images/tree-round_lod3.png}
+			\caption{A wrapped Quercus tree for LOD 3}
+			\label{fig:figure2}
+		\end{minipage}
+	\end{figure}
+\end{frame}
+
+
+\begin{frame}{Tree Modelings}
+	\centering
+    \textbf{Used Alpha Values for Each LOD}
+    \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        Tree & LOD 0 & LOD 1 & LOD 2 & LOD 3 \\
+        \hline
+        Alpha & Nan & 20 & 50 & 100 \\
+        \hline
+    \end{tabular}
+
+    \vspace{1em} % Adjust vertical space between tables as needed
+
+    \textbf{Number of Faces for Each LOD}
+    \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        Tree & LOD 0 & LOD 1 & LOD 2 & LOD 3 \\
+        \hline
+        Trunk & 28 & 28 & 28 & 28 \\
+        Cone & 72 & 894 & 6038 & 34260 \\
+        Oval & 52 & 1260 & 9254 & 44942 \\
+        Round & 30 & 1198 & 10152 & 45164 \\
+        \hline
+    \end{tabular}
+\end{frame}
+
+\begin{frame}{Tree Modeling: tagging leaves}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.5\textwidth]{images/ginkgo_tagged.png}
+		\caption{A tree with 4 different markers on the leaves}
+		\label{fig:figure1}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Tree Modeling: tree's scaling}
+	\begin{figure}[h]
+		\centering
+		\begin{minipage}{0.49\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{images/foliage_arrows.png}
+			\caption{Foliage mesh}
+			\label{fig:figure1}
+		\end{minipage}\hfill
+		\begin{minipage}{0.49\textwidth}
+			\centering
+			\includegraphics[width=0.5\textwidth]{images/trunk_arrows.png}
+			\caption{Trunk mesh}
+			\label{fig:figure2}
+		\end{minipage}
+	\end{figure}
+\end{frame}
+
+
+\begin{frame}{Tree modeling: Mercator's projection}
+	\begin{figure}[H]
+	  \centering
+	  \includegraphics[width=\textwidth]{images/mercator.jpg}
+	  \captionsetup{font={scriptsize}}
+	  \caption{Mercator's projection\cite{img:mercator}}
+  \end{figure}
+
+  \end{frame}
+
+  \begin{frame}{Tree modeling: Mercator's projection}
+	\Large
+	A(latitude, longitude) = A($\phi$, $\lambda$),\\
+	\begin{equation}
+	  \text{projection} \Longrightarrow \quad
+	  \left\{
+	  \begin{array}{l}
+		  x =  \lambda - \lambda_{0} \\
+		  y =  \ln(\tan(\frac{\pi}{4} + \frac{\phi}{2}))
+	  \end{array}
+	  \right.
+	\end{equation}
+	\vfill
+	,where $\lambda_{0}$ is the center of the map
+  \end{frame}
+
+
+  \begin{frame}{Tree modeling: Mercator's projection}
+	\Large
+	\begin{figure}[H]
+	  \centering
+	  \begin{minipage}{0.49\textwidth}
+		  \centering
+		  \includegraphics[width=0.8\textwidth]{images/WGS84-earth-radius.png}
+		  \captionsetup{font={scriptsize}}
+		  \caption{Earth as an ellipsoid\cite{mercator-proj}}
+	  \end{minipage}\hfill
+	  \begin{minipage}{0.49\textwidth}
+		  \centering
+		  \includegraphics[width=0.8\textwidth]{images/WGS84-frame.png}
+		  \captionsetup{font={scriptsize}}
+		  \caption{WGS 84 reference frame\cite{mercator-proj}}
+	  \end{minipage}
+  \end{figure}
+
+  \textit{WGS84toCartesian.hpp} $\Longrightarrow$ \textbf{GPS} to \textbf{Cartesian}
+  \end{frame}
+
+  \begin{frame}{Tree modeling: foliage and trunk placement}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.5\textwidth]{images/trunk_cut.png}
+		\caption{.3D model of a tree with a trunk that is too long}
+		\label{fig:figure1}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Tree modeling: tree's placement}
+  \begin{figure}[H]
+	\centering
+	\begin{minipage}{0.49\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{images/republic-comparaison.png}
+		\captionsetup{font={scriptsize}}
+		\caption{Republic square with LOD 1 trees}
+	\end{minipage}\hfill
+	\begin{minipage}{0.49\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{images/ovt-republic.png}
+		\captionsetup{font={scriptsize}}
+		\caption{Republic square trees from Overpass turbo\cite{overpass-turbo}}
+	\end{minipage}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Tree modeling: tree's placement}
+	\begin{figure}[H]
+		  \centering
+		  \includegraphics[width=\textwidth]{images/republic-side-view.png}
+		  \captionsetup{font={scriptsize}}
+		  \caption{Republic square with LOD 1 trees}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Tree modeling: tree's altitude}
+	\begin{figure}
+		\centering
+		\includegraphics[width=\textwidth]{images/raycasting.png}
+		\caption{Raycasting of a tree in Grenoble, France}
+		\label{fig:figure1}
+	\end{figure}
+\end{frame}
+
+
+
 
 
 
