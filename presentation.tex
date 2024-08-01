@@ -109,6 +109,8 @@
 	This project is part of a series conducted within the \textbf{exaMA} project,
 	which is a segment of the \textbf{Numpex} project section.
 
+	\vspace{1em}
+
 	\begin{itemize}
 		\item Exa-MA WP1 - Vegetation
 		\item Exa-MA WP1 - Terrain
@@ -695,37 +697,77 @@ void perform_query(std::string bbox, bool verbose) {
   \end{figure}
   \end{frame}
 
-  \begin{frame}{Results: Performance}
+\begin{frame}{Results: Performance}
+\Large
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{images/ovt-bbox2.png}
+	\captionsetup{font={scriptsize}}
+	\caption{Bounding Box 2: 384.0 m², 71 trees}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Results: Performance}
+\Large
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{images/ovt-bbox3.png}
+	\captionsetup{font={scriptsize}}
+	\caption{Bounding Box 3: 626.1 m², 254 trees}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Results: Performance}
+\Large
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{images/ovt-bbox4.png}
+	\captionsetup{font={scriptsize}}
+	\caption{Bounding Box 4: 808.4 m², 513 trees}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Results: Performance}
+\Large
+Without LOD 3
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{images/perf_lod_faces.png}
+	\captionsetup{font={scriptsize}}
+	\caption{Relationship between the number of faces and the number of trees}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Results: Performance}
+	\Large
+	With LOD 3
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth]{images/perf_lod_faces_lod3.png}
+		\captionsetup{font={scriptsize}}
+		\caption{Relationship between the number of faces and the number of trees}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Results: Performance}
 	\Large
 	\begin{figure}[H]
-	  \centering
-	  \includegraphics[width=0.7\textwidth]{images/ovt-bbox2.png}
-	  \captionsetup{font={scriptsize}}
-	  \caption{Bounding Box 2: 384.0 m², 71 trees}
-  \end{figure}
-  \end{frame}
+		\centering
+		\includegraphics[width=1\textwidth]{images/perf_autorefine_ON_OFF.png}
+		\captionsetup{font={scriptsize}}
+		\caption{Comparison of the execution time with and without the autorefine method}
+	\end{figure}
+\end{frame}
 
-  \begin{frame}{Results: Performance}
+\begin{frame}{Results: Performance}
 	\Large
 	\begin{figure}[H]
-	  \centering
-	  \includegraphics[width=0.7\textwidth]{images/ovt-bbox3.png}
-	  \captionsetup{font={scriptsize}}
-	  \caption{Bounding Box 3: 626.1 m², 254 trees}
-  \end{figure}
-  \end{frame}
-
-  \begin{frame}{Results: Performance}
-	\Large
-	\begin{figure}[H]
-	  \centering
-	  \includegraphics[width=0.7\textwidth]{images/ovt-bbox4.png}
-	  \captionsetup{font={scriptsize}}
-	  \caption{Bounding Box 4: 808.4 m², 513 trees}
-  \end{figure}
-  \end{frame}
-
-%%%%% finish perf
+		\centering
+		\includegraphics[width=1\textwidth]{images/perf_async_improv.png}
+		\captionsetup{font={scriptsize}}
+		\caption{Thread parallelization improvement}
+	\end{figure}
+\end{frame}
 
 \begin{frame}{Prospects}
 	\begin{itemize}
