@@ -81,7 +81,7 @@
 
 \title[ExaMA WP1 Vegetation]{
   \includegraphics[width=0.8\textwidth]{images/logo-ufr.png}
-  ExaMA WP1 - Vegetation}
+  exa-MA WP1 - Vegetation}
 \author[PA Senger]{Pierre-Antoine SENGER}
 
 \begin{document}
@@ -106,7 +106,7 @@
 
 \begin{frame}{Introduction}
 
-	This project is part of a series conducted within the \textbf{exaMA} project,
+	This project is part of a series conducted within the \textbf{exa-MA} project,
 	which is a segment of the \textbf{Numpex} project section.
 
 	\vspace{1em}
@@ -170,7 +170,7 @@
 	\Large
 	\begin{itemize}
 		\item \textbf{\textcolor{red}{Extracting}} \textbf{tree data} from \textbf{OpenStreetMap}
-		\item \textbf{\textcolor{red}{Generating}} \textbf{3D tree models} using \textbf{CGAL} and \textbf{Gmsh}
+		\item \textbf{\textcolor{red}{Generating}} \textbf{3D tree models}
 		\item \textbf{\textcolor{red}{Integrating}} \textbf{tree models} in the \textbf{terrain mesh}
 		\item \textbf{\textcolor{red}{Optimizing}} \textbf{computational efficiency}
 	\end{itemize}
@@ -182,7 +182,6 @@
 		\item Data Acquisition
 		\item Generating Tree Library
 		\item Scaling Trees
-		\item Wrapping Trees
 		\item Placing Trees
 		\item Merging Meshes
 		\item Parallelization
@@ -602,6 +601,15 @@ void perform_query(std::string bbox, bool verbose) {
 		\centering
 		\includegraphics[width=\textwidth]{images/raycasting.png}
 		\caption{Raycasting of a tree in Grenoble, France}
+		\label{fig:figure1}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Raycasting: BVH}
+	\begin{figure}
+		\centering
+		\includegraphics[width=\textwidth]{images/whitted_rubin_bvh.jpg}
+		\caption{Image based on A 3-Dimensional Representation for Fast Rendering of Complex Scenes, by Rubin and Whitted. \cite{how-to-bvh}}
 		\label{fig:figure1}
 	\end{figure}
 \end{frame}
